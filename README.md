@@ -31,25 +31,25 @@ Este repositorio contiene la documentación completa del proyecto de **Análisis
 
 ***Comparativas***
 
-* **¿Cuál es el método de pago que más usan los clientes?**
-* **Top 10 productos más vendidos**
-* **¿Cuál es el producto más vendido?**
-* **¿Qué categoría vende más?**
+* **¿Cuál es el método de pago que más usan los clientes?** ⇒ SQL|Power BI
+* **Top 10 productos más vendidos**  ⇒ SQL|Power BI
+* **¿Cuál es el producto más vendido?** ⇒ SQL|Power BI
+* **¿Qué categoría vende más?** ⇒ SQL|Power BI
 
 ***Temporales***
 
-* **Top 2 meses donde se realizaron más ventas**
-* **¿Cuál es el mes con más ventas?**
+* **Top 2 meses donde se realizaron más ventas** ⇒ SQL|Power BI
+* **¿Cuál es el mes con más ventas?** ⇒ SQL|Power BI
 
 ***Geográficas***
 
-* **TOP 5 ciudades/paises/regiones donde se hicieron más pedidos**
-* **¿En qué ciudad/pais/region se hicieron más pedidos?**
+* **TOP 5 ciudades/paises/regiones donde se hicieron más pedidos** ⇒ SQL|Power BI
+* **¿En qué ciudad/pais/region se hicieron más pedidos?** ⇒ SQL|Power BI
 
 ***Relacionales***
 
-* **¿Cómo cambian las ventas totales según las categorías de producto?**
-* **¿Se compran más productos en promedio con cierto método de pago?**
+* **¿Cómo cambian las ventas totales según las categorías de producto?** ⇒ SQL|Power BI
+* **¿Se compran más productos en promedio con cierto método de pago?** ⇒ SQL|Power BI
 
 ## Indicadores Clave KPIs
 
