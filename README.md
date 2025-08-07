@@ -29,7 +29,13 @@ Este repositorio contiene la documentación completa del proyecto de **Análisis
 
 ## Preguntas Clave
 
-* 
+***Comparativas***
+
+* **¿?**
+* **¿?**
+* **¿?**
+* **¿?**
+* **¿?**
 
 ## Indicadores Clave KPIs
 
