@@ -1,6 +1,6 @@
 # Análisis de Reseñas de Amazon
 
-<img src="./src/image/amazon.png">
+<img src="./src/image/amazon-inverted_82087.png">
 
 Este repositorio contiene la documentación completa del proyecto de **Análisis Exploratorio de Datos (EDA)** aplicado a ventas de productos de **Amazon** en 2025.
 
