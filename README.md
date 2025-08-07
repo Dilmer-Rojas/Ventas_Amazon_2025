@@ -1,4 +1,4 @@
-# Análisis de Reseñas de Amazon
+# Análisis de Ventas de Amazon
 
 <img src="./src/image/amazon-inverted_82087.png">
 
@@ -10,6 +10,7 @@ Este repositorio contiene la documentación completa del proyecto de **Análisis
 - [Objetivo del Proyecto](#objetivo-del-proyecto)
 - [Preguntas Clave](#preguntas-clave)
 - [Indicadores Clave KPIs](#indicadores-clave-kpis)
+- [Analisis Predictivo](#análisis-predictivo)
 - [Herramientas Utilizadas](#herramientas-utilizadas)
 
 ## Objetivo del Proyecto
@@ -51,9 +52,31 @@ Este repositorio contiene la documentación completa del proyecto de **Análisis
 * **¿Cómo cambian las ventas totales según las categorías de producto?** ⇒ SQL|Power BI
 * **¿Se compran más productos en promedio con cierto método de pago?** ⇒ SQL|Power BI
 
-## Indicadores Clave KPIs
 
-* 
+## Indicadores Clave KPI
+
+* **Ventas Totales:** `SUM(Total Sales)` → USD → *Mide el tamaño total del negocio y el impacto global de las ventas.*
+
+* **Margen Operativo (%):** `(Ganancia Operativa / Ventas totales) * 100` → % → *Evalúa cuánta ganancia real deja cada venta, no solo cuánto se vende.*
+
+* **Producto más Vendido:** `MAX(Total Sales)` → USD → *Indentifica el producto estrella para campañas y reposición de inventario.*
+
+* **Mes con Más Ventas:** `MAX(SUM(Total Sales))` → USD → *Detecta el momento pico para enforcar marketing y stock.*
+
+## Análisis Predictivo
+
+* **📌 Predecir si una orden será Completada, Pendiente o Cancelada**
+    * **Target:** `Status`
+    * **Features:**
+        * `Price`
+        * `Quantity`
+        * `Payment Method`
+        * `Category`
+        * `Customer Location`
+        * `Mes`, `Día de la semana`, (extraido de los `datos`)
+    * **Modelo:** Clasificación (Random Forest, XGBoost, Logistic Regression)
+    * **Uso práctico:** Alertas tempranas de pedidos con riesgo de no completarse
+
 
 ## Herramientas Utilizadas
 
