@@ -31,11 +31,25 @@ Este repositorio contiene la documentación completa del proyecto de **Análisis
 
 ***Comparativas***
 
-* **¿?**
-* **¿?**
-* **¿?**
-* **¿?**
-* **¿?**
+* **¿Cuál es el método de pago que más usan los clientes?**
+* **Top 10 productos más vendidos**
+* **¿Cuál es el producto más vendido?**
+* **¿Qué categoría vende más?**
+
+***Temporales***
+
+* **Top 2 meses donde se realizaron más ventas**
+* **¿Cuál es el mes con más ventas?**
+
+***Geográficas***
+
+* **TOP 5 ciudades/paises/regiones donde se hicieron más pedidos**
+* **¿En qué ciudad/pais/region se hicieron más pedidos?**
+
+***Relacionales***
+
+* **¿Cómo cambian las ventas totales según las categorías de producto?**
+* **¿Se compran más productos en promedio con cierto método de pago?**
 
 ## Indicadores Clave KPIs
 
