@@ -33,7 +33,7 @@ datos = normalizar_minmax(datos, columnas=['Price', 'Quantity'])
 # 5. Estandarizar columnas numéricas
 datos = estandarizar_zscore(datos, columnas=['Price', 'Quantity'])
 
-# 6. Corregir texto en la columna 'Product'
+# 6. Corregir texto en la columna 'Product'||||
 datos = corregir_texto(datos, columnas=['Product'])
 
 print(datos)
