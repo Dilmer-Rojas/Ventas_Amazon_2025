@@ -44,8 +44,8 @@ Este repositorio contiene la documentación completa del proyecto de **Análisis
 
 ***Geográficas***
 
-* **TOP 5 ciudades/paises/regiones donde se hicieron más pedidos** ⇒ SQL|Power BI
-* **¿En qué ciudad/pais/region se hicieron más pedidos?** ⇒ SQL|Power BI
+* **TOP 5 ciudades/paises/regiones donde se hicieron más ventas** ⇒ SQL|Power BI
+* **¿En qué ciudad/pais/region se hicieron más ventas?** ⇒ SQL|Power BI
 
 ***Relacionales***
 

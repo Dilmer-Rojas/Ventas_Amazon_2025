@@ -1,14 +1,14 @@
 /*
 	RESPONDER PREGUNTAS CLAVE
 	EDA
-	Por: Laureano Rojas C.
+	Por: Laureano D. Rojas Castaï¿½eda.
 */
 
 /*Comparativas*/
 
--- ¿Cuál es el método de pago que más usan los clientes?
+-- Cual es el metodo de pago que mas usan los clientes?
 SELECT TOP 1
-	Payment_Method AS 'Método de Pago',
+	Payment_Method AS 'Metodo de Pago',
 	COUNT(Payment_Method) AS Total
 FROM 
 	dbo.Amazon_TB
@@ -18,7 +18,7 @@ ORDER BY
 	COUNT(Payment_Method) DESC
 ;
 
--- Top 10 productos más vendidos
+-- Top 10 productos mas vendidos
 SELECT TOP 10
 	Product AS 'Producto',
 	SUM(Quantity) AS 'Cantidades Vendidas'
@@ -29,7 +29,7 @@ GROUP BY
 ORDER BY
 	SUM(Quantity) DESC;
 
--- ¿Cuál es el producto más vendido?
+-- Cual es el producto mas vendido?
 SELECT TOP 1
 	Product AS 'Producto',
 	SUM(Quantity) AS 'Cantidades Vendidas'
@@ -40,9 +40,9 @@ GROUP BY
 ORDER BY
 	SUM(Quantity) DESC;
 
--- ¿Qué categoría vende más?
+-- Que categoria vende mas?
 SELECT TOP 1
-	Category AS 'Categoría',
+	Category AS 'Categoria',
 	SUM(Quantity) AS 'Cantidades Vendidas'
 FROM 
 	dbo.Amazon_TB
@@ -54,16 +54,74 @@ ORDER BY
 
 /*Temporales*/
 
--- Top 2 meses donde se realizaron más ventas
-SELECT * FROM dbo.Amazon_TB;
--- ¿Cuál es el mes con más ventas?
+-- Top 2 meses donde se realizaron mas ventas
+SELECT TOP 2
+	Month AS 'Mes',
+	SUM(Quantity) AS 'Cantidad de Ventas'
+FROM
+	dbo.Amazon_TB
+GROUP BY
+	Month
+ORDER BY
+	SUM(Quantity) DESC
+;
 
-/*Geográficas*/
+-- Cual es el mes con mas ventas?
+SELECT TOP 1
+	Month AS 'Mes',
+	SUM(Quantity) AS 'Numero de Ventas'
+FROM
+	dbo.Amazon_TB
+GROUP BY
+	Month
+ORDER BY
+	SUM(Quantity) DESC;
 
--- TOP 5 ciudades/paises/regiones donde se hicieron más pedidos
--- ¿En qué ciudad/pais/region se hicieron más pedidos?
+/*Geograficas*/
+
+-- TOP 5 ciudades/paises/regiones donde se hicieron mas ventas
+SELECT TOP 5
+	Customer_Location AS 'City',
+	SUM(Quantity) AS 'Numero de Ventas'
+FROM 
+	dbo.Amazon_TB
+GROUP BY
+	Customer_Location
+ORDER BY
+	SUM(Quantity) DESC
+;
+-- En que ciudad/pais/region se hicieron mas ventas?
+SELECT TOP 1
+	Customer_Location AS 'City',
+	SUM(Quantity) AS 'Numero de Ventas'
+FROM 
+	dbo.Amazon_TB
+GROUP BY
+	Customer_Location
+ORDER BY
+	SUM(Quantity) DESC
+;
 
 /*Relacionales*/
 
--- ¿Cómo cambian las ventas totales según las categorías de producto?
--- ¿Se compran más productos en promedio con cierto método de pago?
+-- Como cambian las ventas totales segun las categorias de producto?
+SELECT
+    Category AS 'Categoria',
+    SUM(Total_Sales) AS 'Ventas Totales'
+FROM
+    dbo.Amazon_TB
+GROUP BY
+    Category
+ORDER BY
+    [Ventas Totales] DESC;
+
+-- Se compran mas productos en promedio con cierto metodo de pago?
+SELECT
+    Payment_Method AS 'Metodo de Pago',
+    AVG(Quantity) AS 'Promedio de Productos Comprados'
+FROM
+    dbo.Amazon_TB
+GROUP BY
+    Payment_Method
+ORDER BY
+    [Promedio de Productos Comprados] DESC;
